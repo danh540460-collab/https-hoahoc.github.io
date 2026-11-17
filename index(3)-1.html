@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sơ đồ tư duy Hóa học 12 – Amino acid, Peptide & Protein, Amine</title>
+<style>
+:root{--ink:#14243b;--blue:#2457a6;--teal:#087f8c;--orange:#df9414;--purple:#7950a4;--bg:#f3f6fb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,"DejaVu Sans",sans-serif;color:var(--ink)}
+header{padding:22px 18px 14px;text-align:center;background:linear-gradient(110deg,#173b75,#087f8c);color:white}
+header h1{margin:0;font-size:clamp(23px,4vw,38px);letter-spacing:.5px}header p{margin:8px 0 0}
+nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:14px;background:white;position:sticky;top:0;z-index:5;box-shadow:0 2px 9px #0001}
+button{border:0;border-radius:22px;padding:11px 18px;background:#e8eef8;color:#173b75;font-weight:bold;cursor:pointer}
+button.active{background:#173b75;color:white}.toolbar{display:flex;gap:8px;justify-content:center;padding:10px;flex-wrap:wrap}
+main{max-width:1500px;margin:auto;padding:12px}.topic{display:none}.topic.active{display:block}
+.intro{text-align:center;margin:12px 0 18px}.intro h2{margin:8px 0;font-size:27px}.intro p{margin:0;color:#52627a}
+.map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:stretch}
+.center{grid-column:1/-1;text-align:center;border-radius:18px;padding:18px;color:white;font-size:25px;font-weight:800;box-shadow:0 5px 14px #0002}
+.card{background:white;border-radius:15px;padding:16px;border-top:6px solid var(--c);box-shadow:0 3px 12px #1c355411;break-inside:avoid}
+.card h3{margin:0 0 9px;color:var(--c);font-size:18px}.card p,.card li{font-size:14px;line-height:1.48}.card ul{margin:7px 0;padding-left:19px}
+.eq{display:block;background:#f2f5fa;border-left:4px solid var(--c);padding:9px 11px;margin:8px 0;border-radius:7px;font-family:"DejaVu Sans",Arial;font-weight:600;line-height:1.55;overflow-wrap:anywhere}
+.note{background:#fff6df;border:1px solid #f0d48a;border-radius:10px;padding:11px;margin:10px 0;font-size:13px;line-height:1.5}
+.tag{display:inline-block;border-radius:20px;padding:4px 9px;background:#edf3fb;color:#31517d;font-size:12px;font-weight:bold;margin:2px}
+footer{text-align:center;color:#66758a;font-size:12px;padding:25px}
+@media(max-width:900px){.map{grid-template-columns:repeat(2,minmax(0,1fr))}.center{font-size:21px}}
+@media(max-width:580px){.map{grid-template-columns:1fr}.center{grid-column:1}.card{padding:14px}}
+@media print{body{background:white}.toolbar,nav{display:none!important}.topic{display:block!important;page-break-after:always}.topic:last-child{page-break-after:auto}.map{grid-template-columns:repeat(3,1fr);gap:8px}.card{box-shadow:none;padding:10px;border:1px solid #ddd;border-top:5px solid var(--c)}.card p,.card li{font-size:10pt}.center{box-shadow:none}header{print-color-adjust:exact;-webkit-print-color-adjust:exact}.card,.center,.eq{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+</style></head><body>
+<header><h1>HÓA HỌC 12 · SƠ ĐỒ TƯ DUY</h1><p>AMINO ACID · PEPTIDE &amp; PROTEIN · AMINE</p></header>
+<nav>
+<button class="active" onclick="showTopic('amino',this)">1. Amino acid</button>
+<button onclick="showTopic('peptide',this)">2. Peptide &amp; Protein</button>
+<button onclick="showTopic('amine',this)">3. Amine</button>
+</nav>
+<div class="toolbar"><button onclick="window.print()">In / Lưu PDF từ trình duyệt</button><button onclick="expandAll()">Hiện toàn bộ nội dung</button></div>
+<main>
+<section class="topic active" id="amino">
+<div class="intro"><h2 style="color:#2457a6">AMINO ACID</h2><p>Hợp chất hữu cơ tạp chức có đồng thời nhóm amino và carboxyl</p></div>
+<div class="map">
+<div class="center" style="background:linear-gradient(100deg,#2457a6,#087f8c)">AMINO ACID · H₂N–CH(R)–COOH</div>
+<div class="card" style="--c:#2457a6"><h3>1. Khái niệm – cấu tạo</h3><p>Hợp chất chứa đồng thời nhóm amino (–NH₂) và carboxyl (–COOH). Amino acid thiên nhiên cấu tạo protein chủ yếu là α-amino acid.</p><span class="eq">H₂N–CH(R)–COOH</span><p>Khoảng 20 amino acid tiêu chuẩn tham gia cấu tạo protein.</p></div>
+<div class="card" style="--c:#087f8c"><h3>2. Phân loại – danh pháp</h3><ul><li>Theo số nhóm: trung tính, acid (nhiều –COOH), base (nhiều –NH₂).</li><li>Tên thay thế: acid 2-amino…oic acid.</li><li>Ví dụ: glycine = 2-aminoethanoic acid; alanine = 2-aminopropanoic acid.</li></ul></div>
+<div class="card" style="--c:#df9414"><h3>3. Tính chất vật lí</h3><ul><li>Chất rắn kết tinh, thường không màu.</li><li>Nhiệt độ nóng chảy tương đối cao.</li><li>Thường tan tốt trong nước do tồn tại dạng ion lưỡng cực.</li></ul><span class="eq">⁺H₃N–CH(R)–COO⁻</span></div>
+<div class="card" style="--c:#7950a4"><h3>4. Tính lưỡng tính</h3><p>Tác dụng với acid: nhóm –NH₂ nhận H⁺.</p><span class="eq">H₂N–CH₂–COOH + HCl → [H₃N–CH₂–COOH]Cl</span><p>Tác dụng với base: nhóm –COOH nhường H⁺.</p><span class="eq">H₂N–CH₂–COOH + NaOH → H₂N–CH₂–COONa + H₂O</span></div>
+<div class="card" style="--c:#087f8c"><h3>5. Ion lưỡng cực – điểm đẳng điện</h3><p>Trong dung dịch, amino acid có cân bằng giữa dạng phân tử và ion lưỡng cực.</p><span class="eq">H₂N–CH(R)–COOH ⇌ ⁺H₃N–CH(R)–COO⁻</span><p>pH = pI: điện tích tổng bằng 0. pH &lt; pI: chủ yếu mang điện dương. pH &gt; pI: chủ yếu mang điện âm.</p></div>
+<div class="card" style="--c:#df9414"><h3>6. Điện di</h3><ul><li>pH &lt; pI: ion dương → cực âm (cathode).</li><li>pH &gt; pI: ion âm → cực dương (anode).</li><li>pH = pI: hầu như không di chuyển.</li></ul><div class="note">Mẹo nhớ: pH thấp → dương; pH cao → âm.</div></div>
+<div class="card" style="--c:#2457a6"><h3>7. Trùng ngưng tạo peptide</h3><p>Các amino acid có thể liên kết với nhau, tách nước tạo liên kết peptide.</p><span class="eq">nH₂N–CH₂–COOH → H–[NH–CH₂–CO]ₙ–OH + (n−1)H₂O</span><p>Phương trình minh họa tạo mạch polypeptide từ glycine.</p></div>
+<div class="card" style="--c:#7950a4"><h3>8. Năm amino acid thường gặp</h3><ul><li>Glycine: H₂N–CH₂–COOH (75)</li><li>Alanine: H₂N–CH(CH₃)–COOH (89)</li><li>Valine: (CH₃)₂CH–CH(NH₂)–COOH (117)</li><li>Lysine: H₂N–(CH₂)₄–CH(NH₂)–COOH (146)</li><li>Glutamic acid: HOOC–(CH₂)₂–CH(NH₂)–COOH (147)</li></ul></div>
+<div class="card" style="--c:#087f8c"><h3>9. Nhận biết – ghi nhớ</h3><ul><li>Có cả –NH₂ và –COOH → có tính lưỡng tính.</li><li>Phân tử nhỏ, phân cực/ion lưỡng cực → thường tan trong nước.</li><li>Liên kết tạo mạch: –CO–NH– và giải phóng H₂O.</li></ul><div class="note">Chú ý: công thức tổng quát H₂N–CH(R)–COOH áp dụng cho α-amino acid có một nhóm –NH₂ và một nhóm –COOH.</div></div>
+</div></section>
+<section class="topic" id="peptide">
+<div class="intro"><h2 style="color:#7950a4">PEPTIDE &amp; PROTEIN</h2><p>Những mắt xích amino acid nối với nhau bằng liên kết peptide</p></div>
+<div class="map">
+<div class="center" style="background:linear-gradient(100deg,#7950a4,#2457a6)">PEPTIDE &amp; PROTEIN · –CO–NH–</div>
+<div class="card" style="--c:#7950a4"><h3>1. Peptide là gì?</h3><p>Peptide gồm các gốc α-amino acid liên kết với nhau bằng liên kết peptide.</p><span class="eq">–CO–NH–</span><p>Liên kết hình thành giữa nhóm –COOH của amino acid này và –NH₂ của amino acid kế tiếp, tách H₂O.</p></div>
+<div class="card" style="--c:#2457a6"><h3>2. Phân loại</h3><ul><li>Dipeptide: 2 gốc amino acid.</li><li>Tripeptide: 3 gốc amino acid.</li><li>Oligopeptide: chuỗi ngắn.</li><li>Polypeptide: chuỗi dài; protein thường gồm một hay nhiều chuỗi polypeptide.</li></ul></div>
+<div class="card" style="--c:#087f8c"><h3>3. Cấu tạo – đầu mạch</h3><p>Đầu N có nhóm amino tự do; đầu C có nhóm carboxyl tự do.</p><span class="eq">H₂N–CH(R₁)–CO–NH–CH(R₂)–COOH</span><p>Ví dụ: Gly–Ala và Ala–Gly là hai peptide khác thứ tự gốc.</p></div>
+<div class="card" style="--c:#df9414"><h3>4. Tạo peptide</h3><p>Ví dụ tạo dipeptide Gly–Gly:</p><span class="eq">2H₂N–CH₂–COOH → H₂N–CH₂–CO–NH–CH₂–COOH + H₂O</span><p>Với mạch thẳng gồm n gốc amino acid: có n−1 liên kết peptide và tách n−1 phân tử nước khi tạo mạch từ amino acid.</p></div>
+<div class="card" style="--c:#7950a4"><h3>5. Phản ứng thủy phân</h3><p>Thủy phân hoàn toàn peptide (xúc tác acid, base hoặc enzyme) thu amino acid.</p><span class="eq">Peptide + H₂O → amino acid</span><p>Thủy phân không hoàn toàn tạo các peptide ngắn hơn và/hoặc amino acid.</p></div>
+<div class="card" style="--c:#087f8c"><h3>6. Phản ứng màu biuret</h3><p>Peptide có từ 2 liên kết peptide trở lên (thường từ tripeptide) phản ứng với Cu(OH)₂ trong môi trường kiềm tạo phức màu tím.</p><span class="eq">Peptide + Cu(OH)₂ / OH⁻ → phức màu tím</span><div class="note">Dipeptide chỉ có 1 liên kết peptide nên không cho phản ứng màu biuret đặc trưng.</div></div>
+<div class="card" style="--c:#2457a6"><h3>7. Protein – khái niệm</h3><p>Protein là đại phân tử sinh học gồm một hay nhiều chuỗi polypeptide có cấu trúc xác định.</p><ul><li>Protein đơn giản: chủ yếu gồm amino acid.</li><li>Protein phức tạp: có thêm thành phần không phải protein (nhóm ngoại).</li></ul></div>
+<div class="card" style="--c:#df9414"><h3>8. Tính chất của protein</h3><ul><li>Biến tính/đông tụ bởi nhiệt độ, acid hoặc base thích hợp.</li><li>Bị thủy phân thành peptide ngắn hơn rồi amino acid.</li><li>Có phản ứng màu biuret do có nhiều liên kết peptide.</li></ul><span class="eq">Protein + H₂O → amino acid (thủy phân hoàn toàn)</span></div>
+<div class="card" style="--c:#7950a4"><h3>9. Phân biệt nhanh</h3><ul><li>Peptide: chuỗi gồm một số gốc amino acid, khối lượng thường nhỏ hơn protein.</li><li>Protein: đại phân tử, cấu trúc không gian phức tạp.</li><li>Biuret: peptide từ tripeptide trở lên và protein → tím.</li><li>Đông tụ do nhiệt: đặc trưng thường gặp ở protein.</li></ul></div>
+</div></section>
+<section class="topic" id="amine">
+<div class="intro"><h2 style="color:#087f8c">AMINE</h2><p>Dẫn xuất của ammonia khi một hay nhiều H được thay bằng gốc hydrocarbon</p></div>
+<div class="map">
+<div class="center" style="background:linear-gradient(100deg,#087f8c,#2457a6)">AMINE · R–NH₂ / R₂NH / R₃N</div>
+<div class="card" style="--c:#087f8c"><h3>1. Khái niệm</h3><p>Amine là dẫn xuất của ammonia (NH₃), trong đó một, hai hoặc ba nguyên tử H được thay bằng gốc hydrocarbon.</p><span class="eq">NH₃ → R–NH₂ → R₂NH → R₃N</span></div>
+<div class="card" style="--c:#2457a6"><h3>2. Phân loại theo bậc</h3><ul><li>Bậc I: R–NH₂ (methylamine CH₃NH₂).</li><li>Bậc II: R–NH–R′ (dimethylamine (CH₃)₂NH).</li><li>Bậc III: R–N(R′)–R″ (trimethylamine (CH₃)₃N).</li></ul><p>Bậc amine = số gốc hydrocarbon liên kết trực tiếp với N.</p></div>
+<div class="card" style="--c:#df9414"><h3>3. Phân loại khác</h3><ul><li>Alkylamine: N liên kết với gốc alkyl.</li><li>Arylamine: N liên kết trực tiếp với vòng aryl, ví dụ aniline C₆H₅NH₂.</li><li>Amine đơn chức hoặc đa chức tùy số nhóm amine.</li></ul></div>
+<div class="card" style="--c:#7950a4"><h3>4. Đồng phân</h3><p>Amine có thể có đồng phân mạch carbon, vị trí nhóm –NH₂ và đồng phân bậc amine.</p><p>Ví dụ công thức C₃H₉N có các amine mạch hở: propan-1-amine, propan-2-amine, N-methylethanamine, trimethylamine.</p></div>
+<div class="card" style="--c:#087f8c"><h3>5. Danh pháp</h3><ul><li>Tên gốc–chức: tên gốc hydrocarbon + amine (ethylamine).</li><li>IUPAC: chọn mạch chính, đánh số vị trí –NH₂, dùng hậu tố -amine.</li><li>CH₃NH₂: methanamine (methylamine).</li><li>CH₃CH₂NH₂: ethanamine (ethylamine).</li><li>C₆H₅NH₂: aniline (benzenamine).</li></ul></div>
+<div class="card" style="--c:#2457a6"><h3>6. Tính chất vật lí</h3><ul><li>Amine phân tử khối nhỏ thường là khí hoặc chất lỏng dễ bay hơi, có mùi khai/tanh.</li><li>Độ tan trong nước thay đổi theo cấu tạo và khối lượng phân tử.</li><li>Amine có thể tạo liên kết hydrogen nếu có liên kết N–H.</li></ul></div>
+<div class="card" style="--c:#df9414"><h3>7. Tính base</h3><p>Amine nhận proton nhờ cặp electron tự do trên N.</p><span class="eq">CH₃NH₂ + H₂O ⇌ CH₃NH₃⁺ + OH⁻</span><span class="eq">CH₃NH₂ + HCl → CH₃NH₃Cl</span><p>Amine làm quỳ tím ẩm hóa xanh tùy độ base và độ tan; aniline rất ít tan nên biểu hiện yếu/không rõ.</p></div>
+<div class="card" style="--c:#7950a4"><h3>8. Phản ứng với nitrous acid</h3><p>Amine bậc I no, mạch hở phản ứng với HNO₂ tạo alcohol, N₂ và nước.</p><span class="eq">R–NH₂ + HNO₂ → R–OH + N₂↑ + H₂O</span><p>Aniline tạo muối diazonium ở điều kiện lạnh; không nhầm với phản ứng của alkylamine.</p></div>
+<div class="card" style="--c:#087f8c"><h3>9. Aniline – phản ứng đặc trưng</h3><p>Aniline hoạt hóa vòng benzene, phản ứng với nước bromine tạo kết tủa trắng 2,4,6-tribromoaniline.</p><span class="eq">C₆H₅NH₂ + 3Br₂ → C₆H₂Br₃NH₂↓ + 3HBr</span><p>Hiện tượng: nước bromine mất màu, xuất hiện kết tủa trắng.</p></div>
+<div class="card" style="--c:#2457a6"><h3>10. Điều chế – ứng dụng</h3><p>Khử nitrobenzene tạo aniline:</p><span class="eq">C₆H₅NO₂ + 3H₂ → C₆H₅NH₂ + 2H₂O (Ni, t°)</span><p>Amine dùng làm nguyên liệu tổng hợp dược phẩm, phẩm nhuộm, polymer và hóa chất.</p></div>
+<div class="card" style="--c:#df9414"><h3>11. Mẹo làm bài</h3><ul><li>Nhìn số gốc carbon gắn trực tiếp với N để xác định bậc.</li><li>Nhận diện amine: có N dạng –NH₂, –NH– hoặc –N– nối với gốc carbon.</li><li>Base: nhận H⁺; tác dụng acid tạo muối amoni.</li><li>Aniline + Br₂: kết tủa trắng.</li></ul></div>
+</div></section>
+</main><footer>Ôn tập Hóa học 12 · Dùng nút “In / Lưu PDF” để in từng chủ đề hoặc lưu thành PDF.</footer>
+<script>
+function showTopic(id,btn){document.querySelectorAll('.topic').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));btn.classList.add('active');}
+function expandAll(){document.querySelectorAll('.topic').forEach(x=>x.classList.add('active'));document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));window.scrollTo({top:0,behavior:'smooth'});}
+</script></body></html>
